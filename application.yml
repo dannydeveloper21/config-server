@@ -1,2 +1,11 @@
-my:
-  greeting: Hello World
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3308/sales?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    username: root
+    password: Admin.12345
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
